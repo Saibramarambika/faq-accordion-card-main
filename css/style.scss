@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$font: 'Kumbh Sans', sans-serif;
+
+html{
+    font-size: 14px;
+}
+
+
+
+body{
+    background-color: hsl(273, 75%, 66%);
+    height: 50rem;
+    font-family: $font;
+
+    .women3{
+        width: 20rem;
+        padding-left: 0rem;
+        margin-top: 4rem;
+        position: relative;
+        bottom: 3rem;
+    }
+    .women{
+        display: none;
+    }
+}
+
+.mainsec{
+    background-color: white;
+    border-radius: 2rem;
+    height: 42rem;
+    text-align: left;
+    padding: 1rem;
+    padding-top: 5rem;
+    margin-top: -10rem;
+    h1{
+        text-align: center;
+        
+    }
+}
+
+.faq.active {
+    .answer{
+        max-height: 20rem;
+    }
+}
+
+.question{
+    display: flex;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4 sec ease;
+}
+
+
+@media only screen and (min-width: 768px) {
+    body{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        
+    }
+    .mainsec{
+        grid-column:2/3 ;
+        grid-row: 1;
+        margin-top: 4rem;
+        padding-top: 1rem;
+        height: 34rem;
+    }
+    .women3{
+        grid-column:1/2 ;
+        grid-row: 1;
+        display: block;
+        width: 34rem;
+    }
+    .women2{
+        display: none ;
+    }
+
+    
+}
+
+

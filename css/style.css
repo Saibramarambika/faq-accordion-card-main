@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #af67e9;
+  height: 50rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body .women3 {
+  width: 20rem;
+  padding-left: 0rem;
+  margin-top: 4rem;
+  position: relative;
+  bottom: 3rem;
+}
+
+body .women {
+  display: none;
+}
+
+.mainsec {
+  background-color: white;
+  border-radius: 2rem;
+  height: 42rem;
+  text-align: left;
+  padding: 1rem;
+  padding-top: 5rem;
+  margin-top: -10rem;
+}
+
+.mainsec h1 {
+  text-align: center;
+}
+
+.faq.active .answer {
+  max-height: 20rem;
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1.4 sec ease;
+  transition: max-height 1.4 sec ease;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .mainsec {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 4rem;
+    padding-top: 1rem;
+    height: 34rem;
+  }
+  .women3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    display: block;
+    width: 34rem;
+  }
+  .women2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
